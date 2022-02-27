@@ -1,0 +1,131 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+    font-weight: 100 ;
+    color: #2E363F;
+}
+
+.container{             /* main container */
+    margin: 4rem;
+}
+
+.title{
+    
+    font-weight:688; 
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+a{
+    text-decoration: none;          /* I prefer to give all a tags */ 
+    color:black;
+    padding: 1rem;
+    transition: 0.2s;
+}
+
+header{                            
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+h2.content{
+    font-weight: 100;
+    padding: 150px 500px 150px 0px;
+    line-height: 2.5rem;   
+}
+
+/* Grid */
+
+/* 2 colon 3 row */
+
+.grid-grubu{
+    display:grid;
+    grid-row-gap: 70px;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(3, 1fr) ;
+}
+
+.grid-grubu img{                           
+    width: 90%;                               /* I adjust the size of the images */
+    height: 500px;
+    transition: 0.5s;
+}
+
+.grid-grubu h3{
+    font-weight:688; 
+    margin-bottom:20px ;                    /* I adjust the name of the images (opacity, weight vs) */
+    opacity:0.8 ;
+}
+
+.grid-grubu span{
+    font-weight: bold;                      /* Date of the images */
+    opacity:0.8;
+}
+
+
+section.citation .content{              /* Citation section i adjust the text */
+  text-align: center;                   
+  font-size: 2rem;
+  margin-top: 100px;
+  padding: 0 180px ;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    font-size: 1rem; 
+    /* I edited h4's height with inline */
+    margin-top:200px ;
+    opacity: 0.5;
+}
+
+
+
+
+/* Hover events */
+
+a:hover{
+    opacity: 0.8;
+    background-color: rgba(250, 128, 114, 0.26);
+}
+
+h1.title:hover{
+    cursor:pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+
+.grid-grubu:hover img{                                  /* I gave the blur effect */
+    filter: blur(4px);
+}
+
+.grid-grubu img:hover{
+    transform: scale(1.02);
+    opacity: 0.87;
+    filter: blur(0);
+}
+
+section.citation:hover{
+    background-color: rgba(248, 154, 143, 0.322);
+    transition: 0.5s;
+    color: rgb(126, 125, 125);
+}
+/* Hover */
+
+
+
+
+
+
+
+
