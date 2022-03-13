@@ -46,17 +46,23 @@ h2.content{
 
 /* 2 colon 3 row */
 
+
+
 .grid-grubu{
     display:grid;
-    grid-row-gap: 70px;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:repeat(3,1fr);
+    grid-gap: 70px;
+    
 }
 
+
+
 .grid-grubu img{                           
-    width: 90%;                               /* I adjust the size of the images */
+    width: 100%;                               /* I adjust the size of the images */
     height: 500px;
     transition: 0.5s;
+    object-fit: cover;
 }
 
 .grid-grubu h3{
@@ -69,6 +75,116 @@ h2.content{
     font-weight: bold;                      /* Date of the images */
     opacity:0.8;
 }
+
+
+                        /*  MEDİA QUARY */
+
+@media (max-width:700px) {
+
+    .container{
+        width: 100%;
+        padding: 2rem 20px 20px 20px;
+        margin: 0;
+        
+    }
+
+    .grid-grubu{
+    grid-template-columns: repeat(1, 1fr) ;
+    }
+    
+
+    h2.content{
+        font-size: 1.4rem;
+        padding-right:0;
+        line-height:3rem ;
+        font-weight: 500;
+    }
+
+    header h1.title{
+        font-size: 1.rem;
+       
+    }
+
+    header nav.navigation{
+        display: none;
+    }
+
+
+    header nav.mobileButon{
+        display: block;
+        
+    }
+
+    
+
+
+    .container div.mobileMenu{
+        
+        background-color: rgba(245, 150, 139, 0.11);
+        backdrop-filter: blur(10px);
+        color: rgba(121, 116, 115, 0.863);
+        padding-left: 20px;
+        margin-top: 60px;
+        border-right:1px solid black ;
+        border-radius:0.4rem ;
+        transition: 1s;
+        
+    }
+
+
+/* Butona tıklandıgı bu classı ekleyıp cıkardım. */
+
+    .container div.mobileMenu.mobilMenuİsActive{
+        display: block;
+          
+    }
+
+
+
+/* liste */
+    ul li.i {
+        
+        list-style-image: url("https://img.icons8.com/material-outlined/20/000000/instagram-new--v2.png");     
+        
+    }
+
+    ul li.c{
+       list-style-image: url("https://img.icons8.com/metro/20/000000/topic.png");
+
+    }
+    ul li.home{
+        list-style-image: url("https://img.icons8.com/material-outlined/20/000000/home--v2.png");
+    }
+
+
+
+    section.citation div.content{
+        padding: 0;
+    }
+
+
+    
+}
+
+
+
+
+.container .mobileMenu{
+    display: none;          
+}
+
+header .mobileButon{
+    display: none;
+}
+
+
+
+
+
+
+/* Media quary yukarısı */
+
+
 
 
 section.citation .content{              /* Citation section i adjust the text */
@@ -121,8 +237,6 @@ section.citation:hover{
     color: rgb(126, 125, 125);
 }
 /* Hover */
-
-
 
 
 
